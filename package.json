@@ -5,8 +5,8 @@
   "main": "./app/main.js",
   "scripts": {
     "start": "electron .",
-    "win32": "electron-packager ./app github首页 --version=1.2.5 --icon=assets/icon.png --platform=win32 --arch=ia32",
-    "win64": "electron-packager ./app github首页 --version=1.2.5 --icon=assets/icon.png --platform=win32 --arch=x64",
+    "win32": "electron-packager ./app github首页 --version=1.2.5 --icon=assets/icon.png --platform=win32 --arch=ia32 --version-string.CompanyName='xu' --version-string.FileDescription='homepage'",
+    "win64": "electron-packager ./app github首页 --version=1.2.5 --icon=assets/icon.png --platform=win32 --arch=x64 --version-string.CompanyName='xu' --version-string.FileDescription='homepage'",
     "mac": "electron-packager ./app github首页 --version=1.2.5 --icon=assets/icon.icns --platform=darwin --arch=all"
   },
   "keywords": [
@@ -15,6 +15,7 @@
   "author": "xu",
   "license": "1.0",
   "devDependencies": {
-    "electron-prebuilt": "^1.2.5"
+    "electron-prebuilt": "^1.2.5",
+    "electron-packager": "*"
   }
 }
